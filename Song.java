@@ -9,7 +9,7 @@ public class Song {
     }
     @Override
     public String toString(){
-        return "Title: " + n/this.title
+        return ("Title: " + n/this.title + "Artist: " + n/this.artist + "Album: " + n/this.album) 
     }
     
 }
