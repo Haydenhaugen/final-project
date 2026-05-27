@@ -1,31 +1,32 @@
 public class Song {
-<<<<<<< HEAD
+
     String title;
-    Strimg artist;
-    String album
-    public Son(String title,String artist,String album){
-=======
-        String title;
+    public String getTitle() {
+        return title;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public String getAlbum() {
+        return album;
+    }
+
     String artist;
     String album;
 
+
     public Song(String title, String artist, String album){
->>>>>>> 4c536c2 (Implement Playlist, Song, and SongNode classes with methods for adding, removing, and printing songs)
+
         this.title = title;
         this.artist = artist;
         this.album = album;
     }
-<<<<<<< HEAD
-    @Override
-    public String toString(){
-        return ("Title: " + n/this.title + "Artist: " + n/this.artist + "Album: " + n/this.album) 
-    }
-    
-=======
 
     public String toString(){
-        return title + " by " + artist;
+        return ("Title: " + this.title + "Artist: " + this.artist + "Album: " + this.album); 
     }
 
->>>>>>> 4c536c2 (Implement Playlist, Song, and SongNode classes with methods for adding, removing, and printing songs)
 }
+    

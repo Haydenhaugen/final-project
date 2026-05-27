@@ -47,6 +47,22 @@ public class Playlist {
         public int size(){
             return size;
     }
+
+    public void removeSong(String title){
+        SongNode current = head;
+        SongNode previous = null;
+        while(!current.song.getTitle().toLowerCase().equals(title.toLowerCase())){
+            previous = current;
+            current = current.nextSong;
+            if(current == null){
+                System.out.println("not in here pal");
+                break;
+            }
+        }
+        previous.nextSong = current.nextSong;
+        current.nextSong = null;
+
+    }
      public void print(){
         System.out.print("[");
         SongNode current = head;

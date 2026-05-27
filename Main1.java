@@ -11,6 +11,8 @@ public class Main1{
         myPL.addToBack(song3);
         myPL.print();
         myPL.playAll();
+        myPL.removeSong("Forever Young");
+        myPL.playAll();
         
     }
 }
